@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <span id="brand">BRAND</span>
+        <p id="brand-name">Chat App</p>
+      </header>
+      <div class="messages">
+        <!-- <div class="i-msg">
+          <span class="name"> Anuj </span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            assumenda ratione tempore. Doloribus eaque animi maxime itaque,
+            totam aliquid esse quaerat officiis tempora repellat, consequuntur
+            ea velit molestiae praesentium quo.
+          </p>
+        </div> -->
+      </div>
+
+      <form>
+        <input
+          autocomplete="off"
+          type="text"
+          name="msg"
+          id="msg"
+          placeholder="Your message"
+          required
+        />
+        <button id="submit" type="submit">Send</button>
+      </form>
+    </section>
+    <script defer src="app.js"></script>
+  </body>
+</html>
